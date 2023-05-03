@@ -1,0 +1,76 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/**************************/
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  section {
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    background-color: #f5e3d2;
+  }
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 29rem 1fr;
+    background-color: #f5e3d2;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 850px (Smaller tablets) */
+/**************************/
+@media (max-width: 53em) {
+  .left {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    overflow: visible;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  img {
+    width: 100%;
+    height: 40vh;
+    padding-right: 0;
+  }
+
+  h1 {
+    margin: 2rem 2rem;
+  }
+}

@@ -1,0 +1,70 @@
+section {
+  display: grid;
+  grid-template-columns: 55rem 1fr;
+  background-color: #f5e3d2;
+}
+
+img {
+  max-width: 100%;
+  height: 100vh;
+  padding-right: 5rem;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+  margin: 10rem 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 5rem;
+}
+
+form {
+  padding-right: 3rem;
+}
+
+label {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-left: 1rem;
+  display: block;
+}
+
+input {
+  border-radius: 0.4rem;
+  height: 2.5rem;
+  width: 35rem;
+  border: none;
+  margin: 1rem 1rem;
+  padding: 2rem 2rem;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
+}
+
+button {
+  font-size: 2rem;
+  background-color: #d47f35;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  margin-top: 3rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #a65a19;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
