@@ -17,10 +17,15 @@ h1 {
   text-align: center;
 }
 
+h1:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 p {
   font-size: 2rem;
   color: black;
-  margin-bottom: 5rem;
+  margin: 5rem 2rem;
 }
 
 form {
@@ -43,6 +48,10 @@ input {
   padding: 2rem 2rem;
 }
 
+input:focus {
+  border: 4px solid #d47f35;
+}
+
 .left {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,18 +62,21 @@ button {
   font-size: 2rem;
   background-color: #d47f35;
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
   border: none;
-  margin-top: 3rem;
+  margin: 3rem 1rem;
+  width: 30rem;
 }
 
 button:hover {
   cursor: pointer;
   background-color: #a65a19;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   font-size: 2rem;
-  margin-top: 3rem;
+  margin: 3rem 2rem;
 }
